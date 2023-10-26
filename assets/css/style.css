@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.template-container {
+  background-color: #d9d9d9;
+  display: grid;
+  grid-template-areas: "header header" "sidebar main";
+}
+.template-container header {
+  background-color: #204060;
+  grid-area: header;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.template-container header h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}
+.template-container sidebar {
+  height: calc(100vh - 100px);
+  width: 200px;
+  grid-area: sidebar;
+}
+.template-container sidebar .menu {
+  display: flex;
+  flex-flow: column;
+  margin: 40px;
+  gap: 15px;
+}
+.template-container sidebar .menu h2 {
+  font-size: 30px;
+}
+.template-container sidebar .menu .section-container {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+.template-container sidebar .menu .section-container p {
+  font-size: 18px;
+}
+.template-container sidebar .menu .section-container p:hover {
+  cursor: pointer;
+}
+.template-container main {
+  height: calc(100vh - 100px);
+  width: calc(100vw - 300px);
+  grid-area: main;
+  display: flex;
+  flex-flow: row wrap;
+}
+.template-container main .item-container {
+  background-color: white;
+  margin: 30px;
+  height: 510px;
+  width: 320px;
+}
+.template-container main .item-container .img-container {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+.template-container main .item-container .img-container img {
+  border: solid 4px black;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+.template-container main .item-container .description-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+.template-container main .item-container button {
+  background-color: #264d73;
+  border: none;
+  color: white;
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.template-container main .item-container button:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
